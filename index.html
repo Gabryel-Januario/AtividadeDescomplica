@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Página Web</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header class="bg-primary text-white text-center py-3">
+      <h1>Minha Página Web</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Início</a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#secao1">Seção 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#secao2">Seção 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#secao3">Seção 3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-4">
+      <section id="secao1" class="mb-4">
+        <h2>Seção 1</h2>
+        <p>Conteúdo da Seção 1</p>
+      </section>
+      <section id="secao2" class="mb-4">
+        <h2>Seção 2</h2>
+        <p>Conteúdo da Seção 2</p>
+      </section>
+      <section id="secao3" class="mb-4">
+        <h2>Seção 3</h2>
+        <p>Conteúdo da Seção 3</p>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p>
+        &copy; <span id="ano"></span> Minha Página Web. Todos os direitos
+        reservados.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("ano").textContent = new Date().getFullYear()
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
